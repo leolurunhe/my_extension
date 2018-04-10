@@ -14,14 +14,14 @@ python3 -m venv env
 
 source env/bin/activate
 
-pip install -e ,
+pip install -e .
 
 export FLASK_APP=insta485
 
 flask run --host 0.0.0.0 --port 8000
 
-#open another console
+# open another console
 
 jupyter notebook
 
-#create a new document, click on the button
+# create a new document, click on the button
