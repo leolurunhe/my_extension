@@ -1,3 +1,5 @@
+// file my_extension/main.js
+
 define([
     'base/js/namespace'
 ], function(
@@ -6,9 +8,9 @@ define([
     function load_ipython_extension() {
 
         var handler = function () {
-            fetch("http://localhost:8000", { mode:'cors',method:'POST', headers: {
+            fetch("http://localhost:8000/api/", { mode:'cors',method:'POST', headers: {
             "Access-Control-Allow-Credentials" : "true",
-            "Access-Control-Allow-Origin" : "http://localhost:8000",
+            "Access-Control-Allow-Origin" : "http://localhost:8000/api/",
             "Content-Type" : "application/json"
         }})
               .then((response)=>{
@@ -23,13 +25,14 @@ define([
 
         var action = {
             icon: 'fa-comment-o', // a font-awesome class used on buttons, etc
-            help    : 'Hello world!',
+            help    : 'api retrieve',
             help_index : 'zz',
             handler : handler
         };
         var prefix = 'my_extension';
-        var action_name = 'helloworld';
-        var full_action_name = Jupyter.actions.register(action, action_name, prefix);
+        var action_name = 'show-alert';
+
+        var full_action_name = Jupyter.actions.register(action, action_name, prefix); // returns 'my_extension:show-alert'
         Jupyter.toolbar.add_buttons_group([full_action_name]);
     }
 
