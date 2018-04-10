@@ -25,7 +25,7 @@ define([
 
         var action = {
             icon: 'fa-comment-o', // a font-awesome class used on buttons, etc
-            help    : 'api retrieve',
+            help    : 'hello_world',
             help_index : 'zz',
             handler : handler
         };
