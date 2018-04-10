@@ -23,13 +23,12 @@ define([
 
         var action = {
             icon: 'fa-comment-o', // a font-awesome class used on buttons, etc
-            help    : 'Show an alert',
+            help    : 'Hello world!',
             help_index : 'zz',
             handler : handler
         };
         var prefix = 'my_extension';
-        var action_name = 'hello';
-
+        var action_name = 'helloworld';
         var full_action_name = Jupyter.actions.register(action, action_name, prefix);
         Jupyter.toolbar.add_buttons_group([full_action_name]);
     }
