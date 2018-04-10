@@ -5,7 +5,6 @@ app = flask.Flask(__name__)  # pylint: disable=invalid-name
 # cross-site read, same origin policy
 cors = flask_cors.CORS(app, resources={r"/views/*": {"origins": "*"}})
 # Read settings from config module (insta485/config.py)
-app.config.from_object('insta485.config')
 # Overlay settings read from file specified by environment variable. This is
 # useful for using different on development and production machines.
 # Reference: http://flask.pocoo.org/docs/0.12/config/
