@@ -1,5 +1,3 @@
-# my_extension
-
 # open a console
 
 cd ~
