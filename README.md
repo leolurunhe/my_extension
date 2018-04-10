@@ -24,4 +24,4 @@ flask run --host 0.0.0.0 --port 8000
 
 jupyter notebook
 
-# create a new document, click on the button
+# create a new document on jupyter notebook, click on the button
