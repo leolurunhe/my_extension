@@ -1,4 +1,4 @@
-# open a console(suggest OS: Ubuntu 17.10, strongly recommend run python in vitural environment)
+# open a console(suggest OS: Ubuntu 17.10, strongly recommend run python in virtual environment)
 
 git clone https://github.com/leolurunhe/my_extension.git
 
