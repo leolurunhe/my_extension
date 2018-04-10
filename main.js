@@ -8,9 +8,9 @@ define([
     function load_ipython_extension() {
 
         var handler = function () {
-            fetch("http://localhost:8000/api/", { mode:'cors',method:'POST', headers: {
+            fetch("http://localhost:8000/view/", { mode:'cors',method:'POST', headers: {
             "Access-Control-Allow-Credentials" : "true",
-            "Access-Control-Allow-Origin" : "http://localhost:8000/api/",
+            "Access-Control-Allow-Origin" : "http://localhost:8000/views/",
             "Content-Type" : "application/json"
         }})
               .then((response)=>{
