@@ -1,8 +1,10 @@
 # open a console
 
+git clone https://github.com/leolurunhe/my_extension.git
+
 cd ~
 
-sudo jupyter nbextension install ~/my_extension/
+sudo jupyter nbextension install ~/my_extension
 
 sudo jupyter nbextension enable my_extension/main
 
