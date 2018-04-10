@@ -28,10 +28,10 @@ define([
             handler : handler
         };
         var prefix = 'my_extension';
-        var action_name = 'show-alert';
+        var action_name = 'hello';
 
         var full_action_name = Jupyter.actions.register(action, action_name, prefix);
-        Jupyter.toolbar.add_buttons_group([{'label':'Hello World!','action':'my_extension:hello'}]);
+        Jupyter.toolbar.add_buttons_group([full_action_name]);
     }
 
     return {

@@ -8,7 +8,7 @@ Tianyu Qiao <qiaotian@umich.edu>
 import os
 
 # Root of this application, useful if it doesn't occupy an entire domain
-APPLICATION_ROOT = '/'
+APPLICATION_ROOT = '/views/'
 
 # Secret key for encrypting cookies
 SECRET_KEY = b'FIXME SET THIS WITH: $ python3 -c "import os; print(os.urandom(24))" '  # noqa: E501  pylint: disable=line-too-long
