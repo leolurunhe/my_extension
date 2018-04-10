@@ -12,15 +12,13 @@ define([
             "Access-Control-Allow-Credentials" : "true",
             "Access-Control-Allow-Origin" : "http://localhost:8000/views/",
             "Content-Type" : "application/json"
-        }})
-              .then((response)=>{
-                console.log(response);
+        }}).then(function(response){
                 return response.json();
-              })
-              .then((data)=>{
-                alert(data.value);
-              })
-              .catch(error=> console.log(error));
+            }).then(function(data){
+		alert(data.value);
+	    }).catch(function(error){
+		console.log(error);
+            });
         };
 
         var action = {
