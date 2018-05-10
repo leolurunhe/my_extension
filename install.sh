@@ -1,6 +1,2 @@
-cd extensions
-jupyter nbextension install . --user
-for i in *.js;
-do jupyter nbextension enable ${i%.*};
-done
-
+jupyter nbextension install getquestion.js --user
+jupyter nbextension enable getquestion --user
